@@ -33,7 +33,7 @@ export const BtnLink: FC<BtnLinkProps & LinkProps> = ({
         duration={100}
         className={cn(
           {
-            ['text-lg leading-1 font-bold py-[18px] bg-primary/10 relative borderedBtn hover:bg-primary/20 duration-300 transition-all text-center']:
+            ['text-lg leading-1 font-bold py-[18px] md:py-[14px] xl:py-4 bg-primary/10 relative borderedBtn hover:bg-primary/20 duration-300 transition-all text-center xl:text-[32px]']:
               variant == 'button',
             ['text-sm leading-normal tracking-[1.4px]']: variant == 'header',
           },

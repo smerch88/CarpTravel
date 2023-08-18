@@ -33,7 +33,7 @@ const config: Config = {
         // TODO: add additional srcset or smth for optimization
         hero: "url('/bgImages/hero.png')",
         heroMd: "url('/bgImages/heroMd.png')",
-        heroXl: "url('/bgImages/hero.png')",
+        heroXl: "url('/bgImages/heroXl.png')",
       },
       colors: {
         primary: '#FFFFFF',
@@ -59,11 +59,43 @@ const config: Config = {
             fontWeight: '200',
           },
         ],
+        quotMd: [
+          '14px',
+          {
+            lineHeight: '16px',
+            letterSpacing: '1.26px',
+            fontWeight: '200',
+          },
+        ],
+        quotXl: [
+          '16px',
+          {
+            lineHeight: '24px',
+            letterSpacing: '1.44px',
+            fontWeight: '200',
+          },
+        ],
         title: [
           '40px',
           {
             lineHeight: '56px',
             letterSpacing: '-1.6px',
+            fontWeight: '100',
+          },
+        ],
+        titleMd: [
+          '67px',
+          {
+            lineHeight: 'normal',
+            letterSpacing: '-2.68px',
+            fontWeight: '100',
+          },
+        ],
+        titleXl: [
+          '98px',
+          {
+            lineHeight: 'normal',
+            letterSpacing: '-3.92px',
             fontWeight: '100',
           },
         ],
@@ -75,11 +107,43 @@ const config: Config = {
             fontWeight: '100',
           },
         ],
+        subTitleMd: [
+          '67px',
+          {
+            lineHeight: 'normal',
+            letterSpacing: '7px',
+            fontWeight: '100',
+          },
+        ],
+        subTitleXl: [
+          '98px',
+          {
+            lineHeight: 'normal',
+            letterSpacing: '0',
+            fontWeight: '100',
+          },
+        ],
         subTitleQuot: [
           '12px',
           {
             lineHeight: 'normal',
             letterSpacing: '9.48px',
+            fontWeight: '300',
+          },
+        ],
+        subTitleQuotMd: [
+          '14px',
+          {
+            lineHeight: 'normal',
+            letterSpacing: '25.9px',
+            fontWeight: '300',
+          },
+        ],
+        subTitleQuotXl: [
+          '16px',
+          {
+            lineHeight: 'normal',
+            letterSpacing: '36.48px',
             fontWeight: '300',
           },
         ],

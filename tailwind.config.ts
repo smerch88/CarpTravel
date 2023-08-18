@@ -30,10 +30,9 @@ const config: Config = {
         gradient:
           'linear-gradient(180deg, rgba(0, 24, 38, 0.5) 0%, rgba(0, 37, 49, 0.00) 100%)',
         sectionBg: 'rgba(0, 37, 49, 0.00)',
-        // TODO: add additional srcset or smth for optimization
-        hero: "url('/bgImages/hero.png')",
-        heroMd: "url('/bgImages/heroMd.png')",
-        heroXl: "url('/bgImages/heroXl.png')",
+        hero: "url('/bgImages/hero.webp')",
+        heroMd: "url('/bgImages/heroMd.webp')",
+        heroXl: "url('/bgImages/heroXl.webp')",
       },
       colors: {
         primary: '#FFFFFF',

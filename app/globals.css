@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,9 +10,57 @@
   }
 
   body {
-    @apply font-sans font-normal;
+    @apply font-sans font-normal text-primary;
   }
 }
 
 @layer components {
+  .borderedBtn {
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 0;
+    box-sizing: content-box;
+    border: 1px solid transparent;
+  }
+
+  .borderedBtn::before,
+  .borderedBtn::after,
+  .borderedBtnSpan::before,
+  .borderedBtnSpan::after {
+    display: block;
+    content: '';
+    width: 44px;
+    height: 11px;
+    position: absolute;
+  }
+
+  .borderedBtn::before {
+    top: -1px;
+    left: -1px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    transition: 0.5s all;
+  }
+  .borderedBtn::after {
+    top: -1px;
+    right: -1px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    transition: 0.5s all;
+  }
+  .borderedBtnSpan::before {
+    bottom: -1px;
+    left: -1px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    transition: 0.5s all;
+  }
+  .borderedBtnSpan::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    transition: 0.5s all;
+  }
 }

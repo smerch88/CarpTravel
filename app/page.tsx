@@ -1,5 +1,11 @@
-import Image from 'next/image';
+import { Header } from '@/page-components/Header';
+import { Hero } from '@/page-components/Hero';
 
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
 }

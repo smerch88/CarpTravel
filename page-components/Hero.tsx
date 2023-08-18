@@ -3,7 +3,7 @@ import { Section } from '@/components/common/Section';
 
 export const Hero = () => {
   return (
-    <Section className="bg-hero md:bg-heroMd xl:bg-heroXl bg-cover xl:pt-[106px] md:pt-[122px] pt-[105px] heroGoodImg relative z-[-1]">
+    <Section className="bg-hero md:bg-heroMd xl:bg-heroXl bg-cover xl:pt-[106px] md:pt-[122px] pt-[105px] heroGoodImg relative">
       <div className="container">
         <div className="md:flex md:justify-between md:flex-row w-full xl:p-6">
           {/* Mobile only */}

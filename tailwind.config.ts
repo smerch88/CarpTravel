@@ -30,9 +30,16 @@ const config: Config = {
         gradient:
           'linear-gradient(180deg, rgba(0, 24, 38, 0.5) 0%, rgba(0, 37, 49, 0.00) 100%)',
         sectionBg: 'rgba(0, 37, 49, 0.00)',
-        hero: "url('/bgImages/hero.webp')",
-        heroMd: "url('/bgImages/heroMd.webp')",
-        heroXl: "url('/bgImages/heroXl.webp')",
+        hero: "image-set(url('/bgImages/hero.png') 1x,url('/bgImages/hero@2x.png') 2x);",
+        heroMd:
+          "image-set(url('/bgImages/heroMd.png') 1x,url('/bgImages/heroMd@2x.png') 2x);",
+        heroXl:
+          "image-set(url('/bgImages/heroXl.png') 1x,url('/bgImages/heroXl@2x.png') 2x);",
+        who: "image-set(url('/bgImages/who.png') 1x,url('/bgImages/who@2x.png') 2x);",
+        whoMd:
+          "image-set(url('/bgImages/whoMd.png') 1x,url('/bgImages/whoMd@2x.png') 2x);",
+        whoXl:
+          "image-set(url('/bgImages/whoXl.png') 1x,url('/bgImages/whoXl@2x.png') 2x);",
       },
       colors: {
         primary: '#FFFFFF',

@@ -79,29 +79,45 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: image-set(
-      url('/bgImages/hero.png') 1x,
-      url('/bgImages/hero@2x.png') 2x
-    );
+    background-image: url('/bgImages/hero.webp');
     background-size: cover;
     z-index: -1;
   }
 
   @media (min-width: 768px) and (max-width: 1279px) {
     .heroGoodImg::before {
-      background-image: image-set(
-        url('/bgImages/heroMd.png') 1x,
-        url('/bgImages/heroMd@2x.png') 2x
-      );
+      background-image: url('/bgImages/heroMd.webp');
     }
   }
 
   @media (min-width: 1280px) {
     .heroGoodImg::before {
-      background-image: image-set(
-        url('/bgImages/heroXl.png') 1x,
-        url('/bgImages/heroXl@2x.png') 2x
-      );
+      background-image: url('/bgImages/heroXl.webp');
+    }
+  }
+
+  .whoGoodImg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/bgImages/who.webp');
+
+    background-size: cover;
+    z-index: -1;
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    .whoGoodImg::before {
+      background-image: url('/bgImages/whoMd.webp');
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .whoGoodImg::before {
+      background-image: url('/bgImages/whoXl.webp');
     }
   }
 }

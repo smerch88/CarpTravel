@@ -8,7 +8,7 @@ import { useState } from 'react';
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="absolute top-0 left-0 w-full pt-6">
+    <header className="absolute top-0 left-0 w-full pt-6 z-10">
       <div className="container">
         <div className="flex flex-row justify-between items-center">
           <Logo />

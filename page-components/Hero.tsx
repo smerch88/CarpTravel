@@ -14,7 +14,7 @@ export const Hero = () => {
           </h2>
           {/* End of Mobile only*/}
           <div className="md:flex md:flex-col md:justify-between">
-            <h1 className="uppercase text-title mb-6 md:mb-0 md:text-titleMd xl:max-w-[646px] xl:text-titleXl">
+            <h1 className="uppercase text-title mb-6 md:mb-0 md:text-titleMd xl:max-w-[646px] xl:text-titleXl max-w-[426px]">
               <span className="font-medium">Uncover</span> Carpathian’s Secrets
             </h1>
             <p className="max-w-[157px] mb-6 text-quot md:mb-0 md:max-w-[270px] md:text-quotMd xl:max-w-max xl:text-quotXl">

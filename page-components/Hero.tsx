@@ -10,6 +10,7 @@ export const Hero = () => {
           <h2 className="max-w-[130px] ml-auto mb-6 md:hidden text-subTitle">
             <span className="font-medium w-full ">7</span>
             DAYS
+            {/* TODO:check line-heighth or another way to make distance smaller */}
             <span className="text-subTitleQuot w-full block">JOURNEY</span>
           </h2>
           {/* End of Mobile only*/}

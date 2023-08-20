@@ -22,7 +22,7 @@ export const Header = () => {
             <ul className="flex flex-row gap-6 text-center">
               {/* TODO: Add links and smooth BtnLink(lib) */}
               <li>
-                <BtnLink href="#" variant="header" scroll>
+                <BtnLink href="#about" variant="header" scroll>
                   About
                 </BtnLink>
               </li>

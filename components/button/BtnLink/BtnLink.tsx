@@ -29,7 +29,6 @@ export const BtnLink: FC<BtnLinkProps & LinkProps> = ({
         onClick={onClick}
         to={href}
         smooth={true}
-        offset={-50}
         duration={100}
         className={cn(
           {

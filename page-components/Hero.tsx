@@ -3,13 +3,14 @@ import { Section } from '@/components/common/Section';
 
 export const Hero = () => {
   return (
-    <Section className="bg-hero md:bg-heroMd xl:bg-heroXl bg-cover xl:pt-[106px] md:pt-[122px] pt-[105px] heroGoodImg relative z-[-1]">
+    <Section className="bg-hero md:bg-heroMd xl:bg-heroXl bg-cover xl:pt-[106px] md:pt-[122px] pt-[105px] heroGoodImg relative">
       <div className="container">
         <div className="md:flex md:justify-between md:flex-row w-full xl:p-6">
           {/* Mobile only */}
           <h2 className="max-w-[130px] ml-auto mb-6 md:hidden text-subTitle">
             <span className="font-medium w-full ">7</span>
             DAYS
+            {/* TODO:check line-heighth or another way to make distance smaller */}
             <span className="text-subTitleQuot w-full block">JOURNEY</span>
           </h2>
           {/* End of Mobile only*/}

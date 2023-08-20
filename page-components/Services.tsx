@@ -33,7 +33,7 @@ export const Services = () => {
         allowTouchMove={false}
         autoplay={{
           delay: 5000,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
       >
         {slides.map(slide => (

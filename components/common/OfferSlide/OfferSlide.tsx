@@ -50,30 +50,39 @@ export const OfferSlide: FC<OfferSlideProps> = ({
           <p className="text-xs font-extralight pb-6 text-right md:hidden">
             {quote}
           </p>
-          <div className="w-full h-[320px] xl:h-[429px] flex flex-col justify-between md:max-w-[221px] md:h-[370px] xl:max-w-[581px]">
+          <div className="w-full h-[320px] xl:h-[429px] flex flex-col justify-between md:max-w-[221px] md:h-[370px] xl:max-w-[605px]">
             <ul className="pb-[34px] md:pb-0 flex flex-col gap-4 xl:pb-[104px]">
               {titles.map((titleItem, index) => (
                 <li
                   key={titleItem}
                   className={cn(
-                    'flex flex-row items-center gap-4 uppercase text-xl md:text-[22px] md:leading-[18px] leading-[17px] md:gap-2',
+                    'flex flex-row items-center gap-4 uppercase text-xl md:text-[22px] md:leading-[18px] leading-[17px] md:gap-2 xl:max-w-[480px] xl:w-full xl:flex xl:flex-row xl:justify-between',
                     titleItem === title
                       ? 'font-medium'
                       : 'font-extralight opacity-50',
                   )}
                   onClick={() => slideTo(index + 1)}
                 >
+                  <div className="flex flex-row gap-4 md:gap-2 items-center">
+                    {titleItem === title ? (
+                      <Rect className="w-[6px] h-[6px]" />
+                    ) : null}
+                    {titleItem}
+                  </div>
                   {titleItem === title ? (
-                    <Rect className="w-[6px] h-[6px]" />
+                    <p className="text-xs font-extralight hidden xl:block md:leading-[24px] tracking-[2.4px]">
+                      {quote}
+                    </p>
                   ) : null}
-                  {titleItem}
                 </li>
               ))}
             </ul>
             <p className="text-xs font-extralight hidden mdOnly:block md:leading-[24px]">
               {quote}
             </p>
-            <p className="text-sm font-extralight md:text-[13px]">{text}</p>
+            <p className="text-sm font-extralight md:text-[13px] xl:max-w-[293px] xl:ml-auto xl:text-lg xl:leading-[24px]">
+              {text}
+            </p>
           </div>
         </div>
       </div>

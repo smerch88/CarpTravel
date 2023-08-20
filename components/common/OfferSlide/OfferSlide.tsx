@@ -54,7 +54,7 @@ export const OfferSlide: FC<OfferSlideProps> = ({
             <ul className="pb-[34px] md:pb-0 flex flex-col gap-4">
               {titles.map((titleItem, index) => (
                 <li
-                  key="title"
+                  key={titleItem}
                   className={cn(
                     'flex flex-row items-center gap-4 uppercase text-xl md:text-[22px] md:leading-[18px] leading-[17px] md:gap-2',
                     titleItem === title

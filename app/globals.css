@@ -15,6 +15,10 @@
 }
 
 @layer components {
+  .container {
+    margin: 0;
+  }
+
   .borderedBtn {
     border: none;
     cursor: pointer;

@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <Section className="bg-hero md:bg-heroMd xl:bg-heroXl bg-cover xl:pt-[106px] md:pt-[122px] pt-[105px] heroGoodImg relative">
       <div className="container">
-        <div className="md:flex md:justify-between md:flex-row w-full xl:p-6">
+        <div className="md:flex md:justify-between md:flex-row w-full">
           {/* Mobile only */}
           <h2 className="max-w-[130px] ml-auto mb-6 md:hidden text-subTitle">
             <span className="font-medium w-full ">7</span>

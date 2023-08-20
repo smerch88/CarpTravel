@@ -24,10 +24,10 @@ export const OfferSlide: FC<OfferSlideProps> = ({
         sizes="100vw"
         className="absolute top-0 left-0 bottom-0 right-0 -z-10 object-cover object-center"
       />
-      <div className="container pt-[54px] md:pt-16">
-        <div className="md:flex md:flex-row md:justify-between md:pb-6 xl:pb-5">
+      <div className="container pt-[54px] md:pt-16 xl:pt-[104px]">
+        <div className="md:flex md:flex-row md:justify-between md:pb-6 xl:pb-5 xl:justify-normal xl:gap-[162px]">
           <h2 className="uppercase text-title smOnly:pb-6 md:mb-0 md:text-titleMd xl:text-titleXl whitespace-nowrap">
-            <span className="font-medium">we</span>offer
+            we <span className="font-medium">offer</span>
           </h2>
           <div className="font-thin text-[43px] md:text-titleMd text-right smOnly:pb-4 xl:text-titleXl">
             {id.toString().padStart(2, '0')}/
@@ -50,8 +50,8 @@ export const OfferSlide: FC<OfferSlideProps> = ({
           <p className="text-xs font-extralight pb-6 text-right md:hidden">
             {quote}
           </p>
-          <div className="h-[320px] xl:h-[429px] flex flex-col justify-between md:max-w-[221px] md:h-[370px] xl:max-w-[605px]">
-            <ul className="pb-[34px] md:pb-0 flex flex-col gap-4">
+          <div className="w-full h-[320px] xl:h-[429px] flex flex-col justify-between md:max-w-[221px] md:h-[370px] xl:max-w-[581px]">
+            <ul className="pb-[34px] md:pb-0 flex flex-col gap-4 xl:pb-[104px]">
               {titles.map((titleItem, index) => (
                 <li
                   key={titleItem}

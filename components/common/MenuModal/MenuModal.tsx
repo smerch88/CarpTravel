@@ -1,6 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { FC, Fragment } from 'react';
 import { MenuModalProps } from './MenuModal.props';
+import { BtnLink } from '@/components/button/BtnLink';
 
 export const MenuModal: FC<MenuModalProps> = ({ isOpen, setIsOpen }) => {
   const closeModal = () => {
@@ -43,13 +44,58 @@ export const MenuModal: FC<MenuModalProps> = ({ isOpen, setIsOpen }) => {
                     CLOSE
                   </button>
                   <nav className="my-auto w-full">
-                    <ul className="flex flex-col gap-12 text-center align-middle text-lg leading-normal tracking-[1.8px]">
+                    <ul className="[&>li]:cursor-pointer flex flex-col gap-12 text-center align-middle">
                       {/* TODO: Add links and smooth scroll(lib) */}
-                      <li>About</li>
-                      <li>Services</li>
-                      <li>Career</li>
-                      <li>Gallery</li>
-                      <li>Contacts</li>
+                      <li>
+                        <BtnLink
+                          href="#about"
+                          variant="menu"
+                          scroll
+                          onClick={closeModal}
+                        >
+                          About
+                        </BtnLink>
+                      </li>
+                      <li>
+                        <BtnLink
+                          href="#services"
+                          variant="menu"
+                          scroll
+                          onClick={closeModal}
+                        >
+                          Services
+                        </BtnLink>
+                      </li>
+                      <li>
+                        <BtnLink
+                          href="#career"
+                          variant="menu"
+                          scroll
+                          onClick={closeModal}
+                        >
+                          Career
+                        </BtnLink>
+                      </li>
+                      <li>
+                        <BtnLink
+                          href="#gallery"
+                          variant="menu"
+                          scroll
+                          onClick={closeModal}
+                        >
+                          Gallery
+                        </BtnLink>
+                      </li>
+                      <li>
+                        <BtnLink
+                          href="#contacts"
+                          variant="menu"
+                          scroll
+                          onClick={closeModal}
+                        >
+                          Contacts
+                        </BtnLink>
+                      </li>
                     </ul>
                   </nav>
                 </Dialog.Panel>

@@ -6,7 +6,7 @@ export interface BtnLinkProps
     HTMLAnchorElement
   > {
   children: ReactNode;
-  variant?: 'header' | 'button';
+  variant?: 'header' | 'button' | 'menu';
   disabled?: boolean;
   href?: string;
   scroll?: boolean;

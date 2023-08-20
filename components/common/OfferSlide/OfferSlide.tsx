@@ -56,7 +56,7 @@ export const OfferSlide: FC<OfferSlideProps> = ({
                 <li
                   key={titleItem}
                   className={cn(
-                    'flex flex-row items-center gap-4 uppercase text-xl md:text-[22px] md:leading-[18px] leading-[17px] md:gap-2 xl:max-w-[480px] xl:w-full xl:flex xl:flex-row xl:justify-between',
+                    'flex flex-row items-center gap-4 uppercase text-xl md:text-[22px] md:leading-[18px] leading-[17px] md:gap-2 xl:max-w-[480px] xl:w-full xl:flex xl:flex-row xl:justify-between cursor-pointer hover:opacity-100 duration-300',
                     titleItem === title
                       ? 'font-medium'
                       : 'font-extralight opacity-50',

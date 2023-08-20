@@ -21,7 +21,10 @@ export const Services = () => {
   };
 
   return (
-    <Section className="bg-black relative pt-0 pb-0 md:pt-0 md:pb-0 xl:pt-0 xl:pb-0">
+    <Section
+      className="bg-black relative pt-0 pb-0 md:pt-0 md:pb-0 xl:pt-0 xl:pb-0"
+      id="#services"
+    >
       <Swiper
         onSwiper={handleSwiper}
         modules={[Autoplay, EffectFade]}
@@ -30,6 +33,10 @@ export const Services = () => {
         grabCursor={false}
         loop={true}
         effect={'fade'}
+        fadeEffect={{
+          crossFade: true,
+        }}
+        speed={1000}
         allowTouchMove={false}
         autoplay={{
           delay: 5000,

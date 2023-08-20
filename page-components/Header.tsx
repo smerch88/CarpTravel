@@ -19,7 +19,7 @@ export const Header = () => {
             MENU
           </button>
           <nav className="hidden md:block">
-            <ul className="flex flex-row gap-6 text-center">
+            <ul className="flex flex-row gap-6 text-center [&>li]:cursor-pointer">
               {/* TODO: Add links and smooth BtnLink(lib) */}
               <li>
                 <BtnLink href="#about" variant="header" scroll>
@@ -27,22 +27,22 @@ export const Header = () => {
                 </BtnLink>
               </li>
               <li>
-                <BtnLink href="#" variant="header" scroll>
+                <BtnLink href="#services" variant="header" scroll>
                   Services
                 </BtnLink>
               </li>
               <li>
-                <BtnLink href="#" variant="header" scroll>
+                <BtnLink href="#career" variant="header" scroll>
                   Career
                 </BtnLink>
               </li>
               <li>
-                <BtnLink href="#" variant="header" scroll>
+                <BtnLink href="#gallery" variant="header" scroll>
                   Gallery
                 </BtnLink>
               </li>
               <li>
-                <BtnLink href="#" variant="header" scroll>
+                <BtnLink href="#contacts" variant="header" scroll>
                   Contacts
                 </BtnLink>
               </li>

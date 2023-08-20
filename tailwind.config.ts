@@ -23,7 +23,7 @@ const config: Config = {
           DEFAULT: '20px',
           sm: '20px',
           md: '32px',
-          xl: '80px',
+          xl: '24px',
         },
       },
       backgroundImage: {

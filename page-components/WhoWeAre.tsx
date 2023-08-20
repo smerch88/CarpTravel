@@ -7,7 +7,7 @@ export const WhoWeAre = () => {
       id="#about"
     >
       <div className="container">
-        <div className="xl:p-6">
+        <div>
           <div className="md:flex mb:flex-row md:gap-[76px] md:mb-16">
             <div className="md:flex md:flex-col md:justify-between">
               <h2 className="uppercase text-title mb-2 md:mb-0 md:text-titleMd xl:text-titleXl whitespace-nowrap">

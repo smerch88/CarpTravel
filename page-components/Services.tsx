@@ -32,7 +32,7 @@ export const Services = () => {
         effect={'fade'}
         allowTouchMove={false}
         autoplay={{
-          delay: 3000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
       >

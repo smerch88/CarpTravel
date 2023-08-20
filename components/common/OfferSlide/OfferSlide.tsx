@@ -56,7 +56,7 @@ export const OfferSlide: FC<OfferSlideProps> = ({
                 <li
                   key={titleItem}
                   className={cn(
-                    'flex flex-row items-center gap-4 uppercase text-xl md:text-[22px] md:leading-[18px] leading-[17px] md:gap-2 xl:max-w-[480px] xl:w-full xl:flex xl:flex-row xl:justify-between cursor-pointer hover:opacity-100 duration-300',
+                    'flex flex-row items-center gap-4 text-xl md:text-[22px] md:leading-[18px] leading-[17px] md:gap-2 xl:max-w-[500px] xl:w-full xl:flex xl:flex-row xl:justify-between cursor-pointer hover:opacity-100 duration-300',
                     titleItem === title
                       ? 'font-medium'
                       : 'font-extralight opacity-50',
@@ -67,10 +67,10 @@ export const OfferSlide: FC<OfferSlideProps> = ({
                     {titleItem === title ? (
                       <Rect className="w-[6px] h-[6px]" />
                     ) : null}
-                    {titleItem}
+                    <span className="uppercase">{titleItem}</span>
                   </div>
                   {titleItem === title ? (
-                    <p className="text-xs font-extralight hidden xl:block md:leading-[24px] tracking-[2.4px]">
+                    <p className="text-xs font-extralight hidden xl:block md:leading-[24px] tracking-[2.4px] capitalize">
                       {quote}
                     </p>
                   ) : null}

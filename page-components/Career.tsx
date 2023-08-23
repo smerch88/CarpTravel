@@ -34,7 +34,7 @@ export const Career = () => {
           <div className="smOnly:bg-career smOnly:py-14 smOnly:bg-center smOnly:bg-cover">
             <div className="smOnly:container">
               <div className="xl:flex xl:flex-row xl:mb-[11px]">
-                <h3 className="uppercase text-[30px] font-extralight max-w-[179px] mb-14 ml-20 xl:mr-[333px] xl:ml-[80px] xl:mb-0 xl:text-[36px] xl:leading-[39px]">
+                <h3 className="uppercase text-[30px] font-extralight max-w-[179px] mb-14 ml-20 xl:mr-[333px] xl:ml-[135px] xl:mb-0 xl:text-[36px] xl:leading-[39px]">
                   Why us ?
                 </h3>
                 <p className="text-sm leading-[20px] font-extralight mb-6 max-w-[179px] smOnly:ml-auto md:max-w-[221px] xl:w-[290px] md:mb-8 md:text-[13px] xl:text-[18px] xl:leading-[24px] xl:max-w-[234px] xl:mb-[14px] xl:block hidden">
@@ -44,7 +44,7 @@ export const Career = () => {
                   </span>
                 </p>
               </div>
-              <div className="md:flex md:flex-row md:gap-5 xl:justify-center">
+              <div className="md:flex md:flex-row md:gap-5 xl:justify-between">
                 <div className="smOnly:hidden">
                   <div className="max-w-[181px] text-xs leading-[20px] text-right flex flex-col gap-4 mOnly:mt-[5px] md:max-w-[231px] xl:max-w-max md:gap-6 md:leading-[20px] xl:gap-[21px]">
                     {text.map(item => (
@@ -52,7 +52,7 @@ export const Career = () => {
                         key={item.title}
                         className="xl:flex xl:flex-row xl:justify-between xl:gap-6"
                       >
-                        <h4 className="text-sm mb-2 md:text-base whitespace-nowrap xl:max-w-[253px] xl:w-full xl:text-[18px] xl:leading-[24px]">
+                        <h4 className="text-sm mb-2 md:text-base whitespace-nowrap xl:max-w-[253px] xl:w-full xl:text-[18px] xl:leading-[24px] flex-shrink-0">
                           {item.title}
                         </h4>
                         <p className="font-extralight xl:w-[285px] xl:text-left flex-shrink-0">

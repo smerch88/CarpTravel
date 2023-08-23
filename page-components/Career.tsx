@@ -37,8 +37,8 @@ export const Career = () => {
               <span className="block">
                 Fill out the form right now and join our team!
               </span>
-              <FormCareer />
             </p>
+            <FormCareer />
           </div>
         </div>
       </div>

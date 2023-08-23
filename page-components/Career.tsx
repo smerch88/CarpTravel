@@ -44,7 +44,7 @@ export const Career = () => {
                   </span>
                 </p>
               </div>
-              <div className="md:flex md:flex-row md:gap-5 xl:items-center">
+              <div className="md:flex md:flex-row md:gap-5 xl:justify-center">
                 <div className="smOnly:hidden">
                   <div className="max-w-[181px] text-xs leading-[20px] text-right flex flex-col gap-4 mOnly:mt-[5px] md:max-w-[231px] xl:max-w-max md:gap-6 md:leading-[20px] xl:gap-[21px]">
                     {text.map(item => (

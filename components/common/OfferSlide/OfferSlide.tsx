@@ -36,7 +36,7 @@ export const OfferSlide: FC<OfferSlideProps> = ({
             </span>
           </div>
         </div>
-        <div className="md:flex md:flex-row md:gap-5 pb-[56px] md:pb-[64px]">
+        <div className="md:flex md:flex-row md:gap-5 pb-[56px] md:pb-[64px] xl:justify-center">
           <div className="w-full h-[213px] relative md:h-[370px] xl:h-[429px]">
             <Image
               src={image}

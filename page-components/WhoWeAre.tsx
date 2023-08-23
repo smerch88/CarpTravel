@@ -3,7 +3,7 @@ import { Section } from '@/components/common/Section';
 export const WhoWeAre = () => {
   return (
     <Section
-      className="bg-who md:bg-whoMd xl:bg-whoXl bg-cover whoGoodImg relative"
+      className="bg-who md:bg-whoMd xl:bg-whoXl bg-cover whoGoodImg relative bg-center"
       id="#about"
     >
       <div className="container">

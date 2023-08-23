@@ -1,3 +1,4 @@
+import { Career } from '@/page-components/Career';
 import { Header } from '@/page-components/Header';
 import { Hero } from '@/page-components/Hero';
 import { Services } from '@/page-components/Services';
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <WhoWeAre />
       <Services />
+      <Career />
     </>
   );
 }

@@ -40,6 +40,12 @@ const config: Config = {
           "image-set(url('/bgImages/whoMd.png') 1x,url('/bgImages/whoMd@2x.png') 2x);",
         whoXl:
           "image-set(url('/bgImages/whoXl.png') 1x,url('/bgImages/whoXl@2x.png') 2x);",
+        career:
+          "image-set(url('/bgImages/career.png') 1x,url('/bgImages/career@2x.png') 2x);",
+        careerMd:
+          "image-set(url('/bgImages/careerMd.png') 1x,url('/bgImages/careerMd@2x.png') 2x);",
+        careerXl:
+          "image-set(url('/bgImages/whoXl.png') 1x,url('/bgImages/whoXl@2x.png') 2x);",
       },
       colors: {
         primary: '#FFFFFF',

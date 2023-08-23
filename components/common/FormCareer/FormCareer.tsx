@@ -8,6 +8,7 @@ import { byDialCode } from '@/utils/phone/codes';
 import cn from 'classnames';
 import { useState } from 'react';
 import Error from 'public/error.svg';
+import { ErrorMsg } from '@/components/typography/ErrorMsg';
 
 export const FormCareer = () => {
   const {
@@ -86,12 +87,7 @@ export const FormCareer = () => {
             className="bg-white/5 text-[13px] pt-1 leading-[24px] px-2"
             placeholder="John Smith"
           />
-          {errors.fullName && (
-            <p className="text-red absolute -bottom-6 right-0 flex items-center gap-1">
-              <Error className="w-[18px] h-[18px]" />
-              {errors.fullName.message}
-            </p>
-          )}
+          {errors.fullName && <ErrorMsg>{errors.fullName.message}</ErrorMsg>}
         </label>
         <label className="flex flex-col relative text-xs leading-[24px] tracking-[2.4px]">
           E-mail
@@ -100,12 +96,7 @@ export const FormCareer = () => {
             className="bg-white/5 text-[13px] pt-1 leading-[24px] px-2"
             placeholder="johnsmith@email.com"
           />
-          {errors.email && (
-            <p className="text-red absolute -bottom-6 right-0 flex items-center gap-1">
-              <Error className="w-[18px] h-[18px]" />
-              {errors.email.message}
-            </p>
-          )}
+          {errors.email && <ErrorMsg>{errors.email.message}</ErrorMsg>}
         </label>
         <label className="flex flex-col relative text-xs leading-[24px] tracking-[2.4px]">
           Position
@@ -114,12 +105,7 @@ export const FormCareer = () => {
             className="bg-white/5 text-[13px] pt-1 leading-[24px] px-2"
             placeholder="Movie maker"
           />
-          {errors.position && (
-            <p className="text-red absolute -bottom-6 right-0 flex items-center gap-1">
-              <Error className="w-[18px] h-[18px]" />
-              {errors.position.message}
-            </p>
-          )}
+          {errors.position && <ErrorMsg>{errors.position.message}</ErrorMsg>}
         </label>
         <label className="flex flex-col relative text-xs leading-[24px] tracking-[2.4px]">
           Phone
@@ -128,12 +114,7 @@ export const FormCareer = () => {
             className="bg-white/5 text-[13px] pt-1 leading-[24px] px-2"
             placeholder="+ 38 (097) 12 34 567"
           />
-          {errors.phone && (
-            <p className="text-red absolute -bottom-6 right-0 flex items-center gap-1">
-              <Error className="w-[18px] h-[18px]" />
-              {errors.phone.message}
-            </p>
-          )}
+          {errors.phone && <ErrorMsg>{errors.phone.message}</ErrorMsg>}
         </label>
         <label className="flex flex-col relative text-xs leading-[24px] tracking-[2.4px]">
           Message
@@ -142,12 +123,7 @@ export const FormCareer = () => {
             className="bg-white/5 text-[13px] pt-1 leading-[24px] px-2 h-[196px]"
             placeholder=""
           />
-          {errors.message && (
-            <p className="text-red absolute -bottom-6 right-0 flex items-center gap-1">
-              <Error className="w-[18px] h-[18px]" />
-              {errors.message.message}
-            </p>
-          )}
+          {errors.message && <ErrorMsg>{errors.message.message}</ErrorMsg>}
         </label>
         <label className="flex flex-row relative text-xs leading-[24px] tracking-[2.4px] items-start gap-2">
           <div
@@ -166,12 +142,7 @@ export const FormCareer = () => {
             />
           </div>
           I confirm my consent to the processing of personal data.
-          {errors.agreement && (
-            <p className="text-red absolute -bottom-6 right-0 flex items-center gap-1">
-              <Error className="w-[18px] h-[18px]" />
-              {errors.agreement.message}
-            </p>
-          )}
+          {errors.agreement && <ErrorMsg>{errors.agreement.message}</ErrorMsg>}
         </label>
         <button
           type="submit"

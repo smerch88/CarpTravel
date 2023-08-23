@@ -33,7 +33,7 @@ export const Career = () => {
           </div>
           <div className="smOnly:bg-career smOnly:py-14 smOnly:bg-center smOnly:bg-cover">
             <div className="smOnly:container">
-              <div className="xl:flex xl:flex-row xl:mb-[11px] xl:items-center">
+              <div className="xl:flex xl:flex-row xl:mb-[11px]">
                 <h3 className="uppercase text-[30px] font-extralight max-w-[179px] mb-14 ml-20 xl:mr-[333px] xl:ml-[80px] xl:mb-0 xl:text-[36px] xl:leading-[39px]">
                   Why us ?
                 </h3>
@@ -44,7 +44,7 @@ export const Career = () => {
                   </span>
                 </p>
               </div>
-              <div className="md:flex md:flex-row md:gap-5">
+              <div className="md:flex md:flex-row md:gap-5 xl:items-center">
                 <div className="smOnly:hidden">
                   <div className="max-w-[181px] text-xs leading-[20px] text-right flex flex-col gap-4 mOnly:mt-[5px] md:max-w-[231px] xl:max-w-max md:gap-6 md:leading-[20px] xl:gap-[21px]">
                     {text.map(item => (

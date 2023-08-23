@@ -7,6 +7,7 @@ import type { RegisterOptions } from 'react-hook-form';
 import { byDialCode } from '@/utils/phone/codes';
 import cn from 'classnames';
 import { useState } from 'react';
+import Error from 'public/error.svg';
 
 export const FormCareer = () => {
   const {
@@ -86,7 +87,8 @@ export const FormCareer = () => {
             placeholder="John Smith"
           />
           {errors.fullName && (
-            <p className="text-red absolute -bottom-6 right-0">
+            <p className="text-red absolute -bottom-6 right-0 flex items-center gap-1">
+              <Error className="w-[18px] h-[18px]" />
               {errors.fullName.message}
             </p>
           )}
@@ -99,7 +101,8 @@ export const FormCareer = () => {
             placeholder="johnsmith@email.com"
           />
           {errors.email && (
-            <p className="text-red absolute -bottom-6 right-0">
+            <p className="text-red absolute -bottom-6 right-0 flex items-center gap-1">
+              <Error className="w-[18px] h-[18px]" />
               {errors.email.message}
             </p>
           )}
@@ -112,7 +115,8 @@ export const FormCareer = () => {
             placeholder="Movie maker"
           />
           {errors.position && (
-            <p className="text-red absolute -bottom-6 right-0">
+            <p className="text-red absolute -bottom-6 right-0 flex items-center gap-1">
+              <Error className="w-[18px] h-[18px]" />
               {errors.position.message}
             </p>
           )}
@@ -125,7 +129,8 @@ export const FormCareer = () => {
             placeholder="+ 38 (097) 12 34 567"
           />
           {errors.phone && (
-            <p className="text-red absolute -bottom-6 right-0">
+            <p className="text-red absolute -bottom-6 right-0 flex items-center gap-1">
+              <Error className="w-[18px] h-[18px]" />
               {errors.phone.message}
             </p>
           )}
@@ -138,7 +143,8 @@ export const FormCareer = () => {
             placeholder=""
           />
           {errors.message && (
-            <p className="text-red absolute -bottom-6 right-0">
+            <p className="text-red absolute -bottom-6 right-0 flex items-center gap-1">
+              <Error className="w-[18px] h-[18px]" />
               {errors.message.message}
             </p>
           )}
@@ -161,7 +167,8 @@ export const FormCareer = () => {
           </div>
           I confirm my consent to the processing of personal data.
           {errors.agreement && (
-            <p className="text-red absolute -bottom-6 right-0">
+            <p className="text-red absolute -bottom-6 right-0 flex items-center gap-1">
+              <Error className="w-[18px] h-[18px]" />
               {errors.agreement.message}
             </p>
           )}

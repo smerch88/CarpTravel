@@ -45,7 +45,7 @@ const config: Config = {
         careerMd:
           "image-set(url('/bgImages/careerMd.png') 1x,url('/bgImages/careerMd@2x.png') 2x);",
         careerXl:
-          "image-set(url('/bgImages/whoXl.png') 1x,url('/bgImages/whoXl@2x.png') 2x);",
+          "image-set(url('/bgImages/careerXl.png') 1x,url('/bgImages/careerXl@2x.png') 2x);",
       },
       colors: {
         primary: '#FFFFFF',

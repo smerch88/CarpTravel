@@ -4,10 +4,10 @@ import { text } from '@/utils/staticData/careerText';
 
 export const Career = () => {
   return (
-    <Section className="smOnly:pt-0 smOnly:pb-0 md:bg-careerMd md:bg-center md:bg-cover xl:bg-careerXl md:careerGoodImg">
+    <Section className="smOnly:pt-0 smOnly:pb-0 md:bg-careerMd md:bg-center md:bg-cover xl:bg-careerXl md:careerGoodImg relative">
       <div className="md:container ">
         <div className="flex flex-col">
-          <div className="smOnly:bg-career smOnly:py-14 smOnly:bg-center smOnly:bg-cover smOnly:careerGoodImg">
+          <div className="smOnly:bg-career smOnly:py-14 smOnly:bg-center smOnly:bg-cover smOnly:careerGoodImg relative">
             <div className="smOnly:container">
               <div className="md:flex md:flex-row md:justify-between xl:items-center">
                 <h2 className="uppercase text-title smOnly:mb-6 md:text-titleMd xl:text-titleXl whitespace-nowrap">
@@ -31,7 +31,7 @@ export const Career = () => {
               </div>
             </div>
           </div>
-          <div className="smOnly:bg-career smOnly:py-14 smOnly:bg-center smOnly:bg-cover smOnly:careerGoodImg">
+          <div className="smOnly:bg-career smOnly:py-14 smOnly:bg-center smOnly:bg-cover smOnly:careerGoodImg relative">
             <div className="smOnly:container">
               <div className="xl:flex xl:flex-row xl:mb-[11px]">
                 <h3 className="uppercase text-[30px] font-extralight max-w-[179px] mb-14 ml-20 xl:mr-[333px] xl:ml-[135px] xl:mb-0 xl:text-[36px] xl:leading-[39px]">

@@ -134,7 +134,7 @@ export const FormCareer = () => {
         </div>
         <div className="md:flex md:flew-row md:justify-between">
           <label className="flex flex-row relative text-xs leading-[24px] tracking-[2.4px] items-start gap-2 md:leading-[22px] md:tracking-normal">
-            <div
+            <span
               className={cn(
                 'relative w-6 h-6 flex-shrink-0 md:mr-2',
                 checked
@@ -148,7 +148,7 @@ export const FormCareer = () => {
                 className="absolute top-0 bottom-0 left-0 right-0 cursor-pointer opacity-0"
                 {...register('agreement', registerOptions.agreement)}
               />
-            </div>
+            </span>
             <span>
               I confirm my consent to the{' '}
               <span className="md:block">processing of personal data.</span>

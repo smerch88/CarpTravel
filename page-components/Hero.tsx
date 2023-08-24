@@ -36,7 +36,7 @@ export const Hero = () => {
               the Carpathians. Enjoy stunning views, exciting expeditions, and
               the best service!
             </p>
-            <BtnLink href="#" scroll className="w-full block">
+            <BtnLink href="#contacts" scroll className="w-full block">
               JOIN NOW
             </BtnLink>
           </div>

@@ -1,4 +1,5 @@
 import { Career } from '@/page-components/Career';
+import { Gallery } from '@/page-components/Gallery';
 import { Header } from '@/page-components/Header';
 import { Hero } from '@/page-components/Hero';
 import { Services } from '@/page-components/Services';
@@ -14,6 +15,7 @@ export default function Home() {
       <WhoWeAre />
       <Services />
       <Career />
+      <Gallery />
     </>
   );
 }

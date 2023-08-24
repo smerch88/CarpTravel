@@ -46,6 +46,12 @@ const config: Config = {
           "image-set(url('/bgImages/careerMd.png') 1x,url('/bgImages/careerMd@2x.png') 2x);",
         careerXl:
           "image-set(url('/bgImages/careerXl.png') 1x,url('/bgImages/careerXl@2x.png') 2x);",
+        gallery:
+          "image-set(url('/bgImages/gallery.png') 1x,url('/bgImages/gallery@2x.png') 2x);",
+        galleryMd:
+          "image-set(url('/bgImages/galleryMd.png') 1x,url('/bgImages/galleryMd@2x.png') 2x);",
+        galleryXl:
+          "image-set(url('/bgImages/galleryXl.png') 1x,url('/bgImages/galleryXl@2x.png') 2x);",
       },
       colors: {
         primary: '#FFFFFF',

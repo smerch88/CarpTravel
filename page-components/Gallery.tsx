@@ -41,8 +41,12 @@ export const Gallery = () => (
           }}
           spaceBetween={24}
         >
-          {gallerySlides.map(slide => (
-            <SwiperSlide key={slide} tag="li" className="relative">
+          {gallerySlides.map((slide, index) => (
+            <SwiperSlide
+              key={`gallerySmall-${slide + index}`}
+              tag="li"
+              className="relative"
+            >
               <Image
                 src={slide}
                 alt="slide"
@@ -100,8 +104,8 @@ export const Gallery = () => (
             },
           }}
         >
-          {gallerySlides.map(slide => (
-            <SwiperSlide key={slide} tag="li">
+          {gallerySlides.map((slide, index) => (
+            <SwiperSlide key={`galleryBig-${slide + index}`} tag="li">
               {({ isActive }) => (
                 <div
                   className={cn(
@@ -111,7 +115,7 @@ export const Gallery = () => (
                 >
                   <Image
                     src={slide}
-                    alt="slide"
+                    alt={`gallery-${slide}`}
                     fill
                     objectFit="cover"
                     className=""

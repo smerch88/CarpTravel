@@ -12,6 +12,14 @@
   body {
     @apply font-sans font-normal text-primary;
   }
+
+  input {
+    outline: none;
+  }
+
+  textarea {
+    outline: none;
+  }
 }
 
 @layer components {

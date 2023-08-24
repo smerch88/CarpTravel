@@ -52,6 +52,12 @@ const config: Config = {
           "image-set(url('/bgImages/galleryMd.png') 1x,url('/bgImages/galleryMd@2x.png') 2x);",
         galleryXl:
           "image-set(url('/bgImages/galleryXl.png') 1x,url('/bgImages/galleryXl@2x.png') 2x);",
+        contacts:
+          "image-set(url('/bgImages/contacts.png') 1x,url('/bgImages/contacts@2x.png') 2x);",
+        contactsMd:
+          "image-set(url('/bgImages/contactsMd.png') 1x,url('/bgImages/contactsMd@2x.png') 2x);",
+        contactsXl:
+          "image-set(url('/bgImages/contactsXl.png') 1x,url('/bgImages/galleryXl@2x.png') 2x);",
       },
       colors: {
         primary: '#FFFFFF',

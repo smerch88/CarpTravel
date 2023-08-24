@@ -4,7 +4,10 @@ import { text } from '@/utils/staticData/careerText';
 
 export const Career = () => {
   return (
-    <Section className="smOnly:pt-0 smOnly:pb-0 md:bg-careerMd md:bg-center md:bg-cover xl:bg-careerXl md:careerGoodImg relative">
+    <Section
+      id="#career"
+      className="smOnly:pt-0 smOnly:pb-0 md:bg-careerMd md:bg-center md:bg-cover xl:bg-careerXl md:careerGoodImg relative"
+    >
       <div className="md:container ">
         <div className="flex flex-col">
           <div className="smOnly:bg-career smOnly:py-14 smOnly:bg-center smOnly:bg-cover smOnly:careerGoodImg relative">

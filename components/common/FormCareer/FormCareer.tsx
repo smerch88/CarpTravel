@@ -1,14 +1,13 @@
 'use client';
 
-import { useForm } from 'react-hook-form';
-import { FormCareerFields } from './FormCareer.props';
-import { getEmailRegex, getFullNameRegex } from '@/utils/regex';
-import type { RegisterOptions } from 'react-hook-form';
+import { ErrorMsg } from '@/components/typography/ErrorMsg';
 import { byDialCode } from '@/utils/phone/codes';
+import { getEmailRegex, getFullNameRegex } from '@/utils/regex';
 import cn from 'classnames';
 import { useState } from 'react';
-import Error from 'public/error.svg';
-import { ErrorMsg } from '@/components/typography/ErrorMsg';
+import type { RegisterOptions } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
+import { FormCareerFields } from './FormCareer.props';
 
 export const FormCareer = () => {
   const {

@@ -170,4 +170,29 @@
       background-image: url('/bgImages/galleryXl.webp');
     }
   }
+
+  .contactsGoodImg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/bgImages/contacts.webp');
+
+    background-size: cover;
+    z-index: -1;
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    .contactsGoodImg::before {
+      background-image: url('/bgImages/contactsMd.webp');
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .contactsGoodImg::before {
+      background-image: url('/bgImages/contactsXl.webp');
+    }
+  }
 }

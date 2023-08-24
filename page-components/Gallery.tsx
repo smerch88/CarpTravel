@@ -20,7 +20,10 @@ export const Gallery = () => {
     }
   }, [gallerySlides]);
   return (
-    <Section className="bg-gallery md:bg-galleryMd xl:bg-galleryXl bg-cover galleryGoodImg relative bg-center">
+    <Section
+      id="#gallery"
+      className="bg-gallery md:bg-galleryMd xl:bg-galleryXl bg-cover galleryGoodImg relative bg-center"
+    >
       <div className="container">
         <h2 className="uppercase text-title md:text-titleMd xl:text-titleXl whitespace-nowrap mb-6">
           OUR <span className="font-medium">GALLERY</span>
@@ -138,10 +141,18 @@ export const Gallery = () => {
             </Swiper>
           ) : null}
           <div className="absolute flex justify-between flex-row bottom-4 inset-x-9 xl:inset-x-52 text-[33px] font-thin z-10">
-            <button className="block" aria-label="Previous Slide" ref={prevRef}>
+            <button
+              className="hover:opacity-75 duration-300"
+              aria-label="Previous Slide"
+              ref={prevRef}
+            >
               BACK
             </button>
-            <button className="block" aria-label="Next Slide" ref={nextRef}>
+            <button
+              className="hover:opacity-75 duration-300"
+              aria-label="Next Slide"
+              ref={nextRef}
+            >
               NEXT
             </button>
           </div>
